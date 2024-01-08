@@ -1,0 +1,24 @@
+diff -up kwave-19.07.80/libkwave/MultiTrackSink.h.omv~ kwave-19.07.80/libkwave/MultiTrackSink.h
+--- kwave-19.07.80/libkwave/MultiTrackSink.h.omv~	2019-07-27 19:11:55.072580303 +0200
++++ kwave-19.07.80/libkwave/MultiTrackSink.h	2019-07-27 19:12:00.431553005 +0200
+@@ -32,7 +32,7 @@ namespace Kwave
+ 
+     template <class SINK, const bool INITIALIZE>
+     class MultiTrackSink: public Kwave::SampleSink,
+-                          private QList<SINK *>
++                          protected QList<SINK *>
+     {
+     public:
+ 	/**
+diff -up kwave-19.07.80/libkwave/MultiTrackSource.h.omv~ kwave-19.07.80/libkwave/MultiTrackSource.h
+--- kwave-19.07.80/libkwave/MultiTrackSource.h.omv~	2019-07-27 19:11:33.642689618 +0200
++++ kwave-19.07.80/libkwave/MultiTrackSource.h	2019-07-27 19:11:42.401644908 +0200
+@@ -38,7 +38,7 @@ namespace Kwave
+      */
+     template <class SOURCE, const bool INITIALIZE>
+     class Q_DECL_EXPORT MultiTrackSource: public Kwave::SampleSource,
+-	                                  private QList<SOURCE *>
++	                                  protected QList<SOURCE *>
+     {
+     public:
+ 	/**
