@@ -91,12 +91,12 @@ with a complete zoom- and scroll capability.
 # with error:  "Found rsvg but conversion failed, falling back to convert from ImageMagick" and using imagemagick on aarch64 cause convert failure.
 # Let's disable for now building documentation on aarch64.
 %cmake \
+	-DBUILD_WITH_QT6:BOOL=ON \
 	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON \
 	-G Ninja \
 %ifarch aarch64
             -DWITH_DOC=OFF \
-%endif            
-	    -DBUILD_WITH_QT6:BOOL=ON \
+%endif
             -DWITH_MP3=ON
 
 %build
