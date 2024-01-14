@@ -96,6 +96,7 @@ with a complete zoom- and scroll capability.
 %ifarch aarch64
             -DWITH_DOC=OFF \
 %endif            
+	    -DBUILD_WITH_QT6:BOOL=ON \
             -DWITH_MP3=ON
 
 %build
