@@ -7,7 +7,7 @@
 
 Summary:	A sound editor for KDE
 Name:		plasma6-kwave
-Version:	24.01.85
+Version:	24.01.90
 Release:	1
 License:	GPLv2+
 Group:		Sound
@@ -29,7 +29,7 @@ BuildRequires:	cmake(KF6DocTools)
 BuildRequires:	cmake(KF6GuiAddons)
 BuildRequires:	cmake(KF6I18n)
 BuildRequires:	cmake(KF6IconThemes)
-BuildRequires:	cmake(KF6Init)
+#BuildRequires:	cmake(KF6Init)
 BuildRequires:	cmake(KF6KIO)
 BuildRequires:	cmake(KF6Notifications)
 BuildRequires:	cmake(KF6Service)
