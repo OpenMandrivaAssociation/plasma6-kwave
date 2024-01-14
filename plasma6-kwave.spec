@@ -85,7 +85,7 @@ with a complete zoom- and scroll capability.
 #----------------------------------------------------------------------------
 
 %prep
-%autosetup -p1
+%autosetup -n kwave-%{version} -p1
 # As of 22.03.80/90 an error occur on aarch64 during compilation when converting images.
 # With disabled imagemagick and only enabled librsvg converting success on x86_64 but on aarch64 filing at configure time
 # with error:  "Found rsvg but conversion failed, falling back to convert from ImageMagick" and using imagemagick on aarch64 cause convert failure.
