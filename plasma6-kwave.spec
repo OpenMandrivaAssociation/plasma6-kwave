@@ -11,7 +11,7 @@ Version:	24.01.90
 Release:	1
 License:	GPLv2+
 Group:		Sound
-Url:		http://kwave.sourceforge.net/
+Url:		https://kwave.sourceforge.net/
 Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/kwave-%{version}.tar.xz
 Patch0:		kwave-19.07.80-compile.patch
 BuildRequires:	pkgconfig(Qt6Concurrent)
