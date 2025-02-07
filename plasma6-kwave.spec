@@ -7,13 +7,12 @@
 
 Summary:	A sound editor for KDE
 Name:		plasma6-kwave
-Version:	24.01.90
+Version:	24.12.2
 Release:	1
 License:	GPLv2+
 Group:		Sound
 Url:		https://kwave.sourceforge.net/
 Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/kwave-%{version}.tar.xz
-Patch0:		kwave-19.07.80-compile.patch
 BuildRequires:	pkgconfig(Qt6Concurrent)
 BuildRequires:	pkgconfig(Qt6Core)
 BuildRequires:	pkgconfig(Qt6Multimedia)
@@ -68,19 +67,19 @@ Kwave also includes many plugins (most are still under development) to
 transform the wave-file in several ways and presents a graphical view
 with a complete zoom- and scroll capability.
 
-%files -f %{name}.lang
+%files -f kwave.lang
 %doc CHANGES README TODO
-%{_bindir}/%{name}
-%{_iconsdir}/*/*/*/%{name}*
-%{_datadir}/%{name}
+%{_bindir}/kwave
+%{_iconsdir}/*/*/*/kwave*
+%{_datadir}/kwave
 %{_datadir}/applications/org.kde.kwave.desktop
 %{_libdir}/qt6/plugins/kwave
 %{_datadir}/metainfo/org.kde.kwave.appdata.xml
 # Those are really internal libraries that can't be used by anything else.
 # They also aren't optional. There's no point in splitting them into lib
 # packages.
-%{_libdir}/lib%{name}.so.*
-%{_libdir}/lib%{name}gui.so.*
+%{_libdir}/libkwave.so.*
+%{_libdir}/libkwavegui.so.*
 
 #----------------------------------------------------------------------------
 
@@ -105,4 +104,4 @@ with a complete zoom- and scroll capability.
 %install
 %ninja_install -C build
 
-%find_lang %{name} --with-html
+%find_lang kwave --with-html
