@@ -69,7 +69,7 @@ transform the wave-file in several ways and presents a graphical view
 with a complete zoom- and scroll capability.
 
 %files -f kwave.lang
-%doc CHANGES README TODO
+%doc CHANGES README.md TODO
 %{_bindir}/kwave
 %{_iconsdir}/*/*/*/kwave*
 %{_datadir}/kwave
