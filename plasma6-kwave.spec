@@ -16,6 +16,7 @@ Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/kwave-
 BuildRequires:	pkgconfig(Qt6Concurrent)
 BuildRequires:	pkgconfig(Qt6Core)
 BuildRequires:	pkgconfig(Qt6Multimedia)
+BuildRequires:	pkgconfig(Qt6Test)
 BuildRequires:	pkgconfig(Qt6Widgets)
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(KF6Completion)
